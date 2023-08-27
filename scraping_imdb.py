@@ -58,7 +58,6 @@ if response.status_code == 200:
             value = x.text.split("\xa0")
             star_rating.append(value[0])
             votes.append(value[1].replace("(", "").replace(")", ""))
-        print(star_rating, votes, sep="\n")
     else:
         print("Error: data_star_rating don't exists")
 
